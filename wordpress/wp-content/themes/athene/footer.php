@@ -32,7 +32,18 @@
     		    <div id="footer-links">
     		        <h4>Linkkejä</h4>
     			    <ul>
-                        <?php get_linksbyname('footer', '<li>', '</li>', '', FALSE, 'length', FALSE); ?>
+                        <?php 
+                            // DEPRECATED:
+                            //get_linksbyname('footer', '<li>', '</li>', '', FALSE, 'length', FALSE);
+                            // REPLACED BY:
+                            wp_list_bookmarks(array(
+                                'category_name' => 'footer',
+                                'categorize' => false,
+                                'title_li' => null,
+                                'show_images' => false,
+                                'orderby' => 'length'
+                            ));
+                        ?>
                     </ul>
     			</div>
     		</div>
