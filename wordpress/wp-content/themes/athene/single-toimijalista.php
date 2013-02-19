@@ -1,7 +1,7 @@
 <?php
-define(LAYOUT_TOIMIJAT, "Toimijat");
-define(LAYOUT_PHUKSIT, "Phuksit");
-define(LAYOUT_VALMISTUNEET, "Valmistuneet");
+define("LAYOUT_TOIMIJAT", "Toimijat");
+define("LAYOUT_PHUKSIT", "Phuksit");
+define("LAYOUT_VALMISTUNEET", "Valmistuneet");
 
 $layouts = array(
     LAYOUT_TOIMIJAT => "toimijat",
