@@ -21,7 +21,8 @@ Tags: custom-menu, sticky-post, microformats, rtl-language-support, translation-
 @font-face {
     font-family: 'Museo Slab';
     src: url('fonts/museo_slab-webfont.eot');
-    src: url('fonts/museo_slab-webfont.eot?#iefix') format('embedded-opentype'),
+    src: local('☺'),
+         url('fonts/museo_slab-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/museo_slab-webfont.woff') format('woff'),
          url('fonts/museo_slab-webfont.ttf') format('truetype'),
          url('fonts/museo_slab-webfont.svg#MuseoSlab500') format('svg');
