@@ -70,7 +70,7 @@
 		</div>
 	</header><!-- #branding -->
 
-    <?php if (!$no_small_submenu) { ?>
+    <?php if (!isset($no_small_submenu) || !$no_small_submenu) { ?>
     <header id="subnavi-small">
         <?php include 'subnavi-header.php' ?>
     </header>
