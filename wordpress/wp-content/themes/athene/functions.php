@@ -93,6 +93,16 @@ function toolbox_widgets_init() {
   		'before_title' => '<h2 class="widget-title">',
   		'after_title' => '</h2>',
   	) );
+
+  	register_sidebar( array (
+		'name' => __( 'Virhetiedotteet sivun yläreunassa', 'toolbox' ),
+		'id' => 'error-notification',
+		'description' => __( 'Virhetiedotteet sivun yläreunassa ', 'toolbox' ),
+		'before_widget' => '<div id="error-notification-widget" class="">',
+		'after_widget' => "</div>",
+		'before_title' => '',
+		'after_title' => '',
+	) );
   }
 }
 add_action( 'init', 'toolbox_widgets_init' );

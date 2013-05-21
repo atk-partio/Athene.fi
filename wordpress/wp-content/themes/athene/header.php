@@ -42,10 +42,16 @@
 
 <body <?php body_class(); ?>>
 
+
 <div id="page" class="hfeed">
 
 	<header id="branding" role="banner">
 	    <div class="container_16 clearfix">
+<?php if ( is_active_sidebar( 'error-notification' ) ) : ?>
+<div id="error-notification" class="grid_16">
+	<?php dynamic_sidebar( 'error-notification' ); ?>
+</div>
+<?php endif; ?>
     		<hgroup class="grid_4 alpha">
     			<h1 id="site-title"><span><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
     		</hgroup>

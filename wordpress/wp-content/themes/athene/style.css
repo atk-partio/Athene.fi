@@ -591,3 +591,17 @@ blockquote {
 #dsq-reply h3 {
   font-size: 28px;
 }
+
+/* = error notification
+-------------------------------------------------------------- */
+#error-notification {
+	background-color: hsl(67, 67%, 50%);
+	color: red;
+	font-weight: bold;
+	padding: 0.5em 0;
+	text-align: center;
+}
+
+#error-notification a {
+	color: blue;
+}
